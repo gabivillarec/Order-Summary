@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+/*
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+
+*/
+
+/********************************************************************************************************************************/
+
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+    background-image: url(/Challenges/order-summary-component-main/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    }
+
+
+.container{
+    font-family: 'Red Hat Display', sans-serif;
+    width: 345px;
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.hero img{
+
+    width: 100%;
+    margin-bottom: 24px;
+    
+}
+
+.text__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 16px;
+    width: 265px;
+    color: var(--desaturated-blue);
+    line-height: 25px;
+    
+}
+
+.box__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 305px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    padding: 20px 15px 20px 15px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+}
+
+.box__container a{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.box__container__left{
+    display: flex;
+    margin-right: 25px;
+      
+}
+
+.box__container__left img{
+    margin-right: 20px;
+}
+
+.box__container__left h4{
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.box__container__left p{
+    text-align: start;
+    font-size: 15px;
+    color: var(--desaturated-blue);
+}
+
+.proceed-btn{
+    font-weight: 700;
+    width: 305px;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    box-shadow:  0 18px 20px 0px rgba(0, 0, 0, 0.2);
+    
+}
+
+.cancel-btn{
+    font-weight: 700;
+    text-decoration: none;
+    color:var(--desaturated-blue);
+    margin-bottom: 40px;
+}
+
+
+/****************************************************************************************/
+
+@media (min-width: 600px) {
+
+    body {
+        background-image: url(/Challenges/order-summary-component-main/images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
+
+    .container{
+        width: 400px;
+    }
+
+    .subtitle{
+        width: 285px;
+    }
+
+    .box__container{
+        width: 325px;
+    }
+
+    .box__container a:active{
+        text-decoration: none;
+        color: hsl(245, 94%, 66%);
+    }
+
+    a:hover{
+        cursor: url(/Challenges/order-summary-component-main/images/klipartz.com.png),pointer ;
+        
+    }
+
+    .proceed-btn{
+        width: 325px;
+    }
+    
+    .proceed-btn:active{
+        background-color: hsl(245, 94%, 66%);
+    }
+
+    .cancel-btn:active{
+        color: var(--dark-blue);
+    }
+    
+}
+
+
+
